@@ -5,7 +5,6 @@ import json
 class InventoryAPIController(http.Controller):
 
 
-
     @http.route('/get/products', type='http', auth='public', methods=['GET'])
     def get_products(self, **kwargs):
         if request.httprequest.method != 'GET':
