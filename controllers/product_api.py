@@ -5,13 +5,6 @@ import json
 class InventoryAPIController(http.Controller):
 
 
-    @http.route('/web/offliness', type='http', auth='public', methods=['GET'])
-    def offline(self):
-        """ Returns the offline page delivered by the service worker """
-        # return request.render('web.webclient_offline', {
-        #     'odoo_icon': base64.b64encode(file_open(self._icon_path(), 'rb').read())
-        # })
-        return "Test route is working!"
 
     @http.route('/get/products', type='http', auth='public', methods=['GET'])
     def get_products(self, **kwargs):
